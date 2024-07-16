@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int a[10]={11,34,67,89,22},n=5;
+    int b[n],i;
+    for(i=0;i<n;i++)
+    b[i]=a[i];
+    printf("The first arry is:");
+    for(i=0;i<n;i++)
+    printf("%d",a[i]);
+    printf("The second array is:");
+    for(i=0;i<n;i++)
+    printf("%d",b[i]);
+    return 0;
+}
