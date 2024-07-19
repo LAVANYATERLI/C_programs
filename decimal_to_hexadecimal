@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int dec,rem,i=0;
+    char hex[50];
+    printf("Enter any decimal number:");
+    scanf("%d",&dec);
+    while(dec!=0)
+    {
+        rem=dec%16;
+        if(rem<10)
+            rem=rem+48;
+        else
+            rem=rem+55;
+        hex[i]=rem;
+        i++;
+        dec=dec/16;
+    }
+    printf("\nEquivalent Value in Hexadecimal=");
+    for(i=i-1;i>=0;i--)
+        printf("%c",hex[i]);
+    getch();
+    return 0;
+}
