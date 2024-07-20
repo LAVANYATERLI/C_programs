@@ -1,0 +1,8 @@
+def count_digits(n):
+    if n<10:
+        return 1
+    else:
+        return 1+count_digits(n//10)
+num=int(input("enter a number:"))
+result=count_digits(num)
+print(result)
